@@ -87,6 +87,25 @@ public class Template1Test {
 
 	}
 	
+	@Test
+	public void afficherAsciiTest4() {
+		
+		String mot = "M@NH@TT@N";
+		
+		Template1 template = new Template1();
+		
+		
+	    template.afficherAscii(mot);
+
+	    assertEquals( "#   # ##### #   # #   # ##### ##### ##### ##### #   # \n"
+		    		+ "## ## #   # ##  # #   # #   #   #     #   #   # ##  # \n"
+		    		+ "# # #     # # # # #####     #   #     #       # # # # \n"
+		    		+ "#   #   #   # # # #   #   #     #     #     #   # # # \n"
+		    		+ "#   #       #  ## #   #         #     #         #  ## \n"
+		    		+ "#   #   #   #   # #   #   #     #     #     #   #   # \n", outContent.toString());
+
+	}
+	
 	
 
 }
