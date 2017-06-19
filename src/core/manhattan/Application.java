@@ -15,8 +15,8 @@ public class Application {
 		do {
 			System.out.println("Selectionner un template:\n1- Height: 3 Width: 4\n2- Height: 5 Width: 6\n_>");
 			templateSelection = sc.nextInt();
-			System.out.println("Vous avez choisit le template"+templateSelection+"\n");
 		} while (templateSelection != 1 && templateSelection != 2);
+		System.out.println("Vous avez choisit le template"+templateSelection+"\n");
 		
 			System.out.println("Selectionner un alphabet\n_>");
 			alphabet = sc.nextLine();
@@ -25,8 +25,8 @@ public class Application {
 			do {
 				System.out.println("Mode de selection de la chaine a afficher:\n1- Manuel\n2- automatique\n_>");
 				mode = sc.nextInt();
-				System.out.println("Vous avez choisit le mode: "+mode+"\n");
 			} while (mode != 1 && mode != 2);
+			System.out.println("Vous avez choisit le mode: "+mode+"\n");
 
 			if (mode == 1) {
 				System.out.println("Saisir une chaine de caracteres a afficher:\n_>");
