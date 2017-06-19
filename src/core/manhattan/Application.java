@@ -21,16 +21,20 @@ public class Application {
 			templateSelection = sc.nextInt();
 		} while (templateSelection != 1 && templateSelection != 2);
 		System.out.println("Vous avez choisit le template"+templateSelection+"\n");
-		
+		sc.close();
+		sc = new Scanner(System.in);
 			System.out.println("Selectionner un alphabet\n_>");
 			alphabet = sc.nextLine();
 			System.out.println("Vous avez choisit les lettres suivantes: "+alphabet+"\n");
+			sc.close();
+			sc = new Scanner(System.in);
 
 			do {
 				System.out.println("Mode de selection de la chaine a afficher:\n1- Manuel\n2- automatique\n_>");
 				mode = sc.nextInt();
 			} while (mode != 1 && mode != 2);
 			System.out.println("Vous avez choisit le mode: "+mode+"\n");
+			sc.close();
 
 			if (mode == 1) {
 				System.out.println("Saisir une chaine de caracteres a afficher:\n_>");
