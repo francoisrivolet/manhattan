@@ -62,10 +62,11 @@ public class Template1 {
 		String ligne5 ="";
 		String ligne6 ="";
 		
-		 for (int i = 0; i < (mot.length()-1); i++) 
+		 for (int i = 0; i < mot.length(); i++) 
 		 {
 			 switch (mot.charAt(i)) {
 			 	case 'A': 
+			 	case 'a':
 			 		ligne1 = ligne1 + la1 + " ";
 			 		ligne2 = ligne2 + la2 + " ";
 			 		ligne3 = ligne3 + la3 + " ";
@@ -74,6 +75,7 @@ public class Template1 {
 			 		ligne6 = ligne6 + la6 + " ";
 			 		break;
 			 	case 'E':
+			 	case 'e':
 			 		ligne1 = ligne1 + le1 + " ";
 			 		ligne2 = ligne2 + le2 + " ";
 			 		ligne3 = ligne3 + le3 + " ";
@@ -82,6 +84,7 @@ public class Template1 {
 			 		ligne6 = ligne6 + le6 + " ";
 			 		break;
 			 	case 'H':
+			 	case 'h':
 			 		ligne1 = ligne1 + lh1 + " ";
 			 		ligne2 = ligne2 + lh2 + " ";
 			 		ligne3 = ligne3 + lh3 + " ";
@@ -90,6 +93,7 @@ public class Template1 {
 			 		ligne6 = ligne6 + lh6 + " ";
 			 		break;
 			 	case 'M':
+			 	case 'm':
 			 		ligne1 = ligne1 + lm1 + " ";
 			 		ligne2 = ligne2 + lm2 + " ";
 			 		ligne3 = ligne3 + lm3 + " ";
@@ -98,12 +102,22 @@ public class Template1 {
 			 		ligne6 = ligne6 + lm6 + " ";
 			 		break;
 			 	case 'N':
+			 	case 'n':
 			 		ligne1 = ligne1 + ln1 + " ";
 			 		ligne2 = ligne2 + ln2 + " ";
 			 		ligne3 = ligne3 + ln3 + " ";
 			 		ligne4 = ligne4 + ln4 + " ";
 			 		ligne5 = ligne5 + ln5 + " ";
 			 		ligne6 = ligne6 + ln6 + " ";
+			 		break;
+			 	case 'T':
+			 	case 't':
+			 		ligne1 = ligne1 + lt1 + " ";
+			 		ligne2 = ligne2 + lt2 + " ";
+			 		ligne3 = ligne3 + lt3 + " ";
+			 		ligne4 = ligne4 + lt4 + " ";
+			 		ligne5 = ligne5 + lt5 + " ";
+			 		ligne6 = ligne6 + lt6 + " ";
 			 		break;
 			default:
 				ligne1 = ligne1 + l_1 + " ";
@@ -114,12 +128,12 @@ public class Template1 {
 		 		ligne6 = ligne6 + l_6 + " ";
 				break;
 			}
-			 System.out.println(ligne1);
-			 System.out.println(ligne2);
-			 System.out.println(ligne3);
-			 System.out.println(ligne4);
-			 System.out.println(ligne5);
-			 System.out.println(ligne6);
 		}
+		 System.out.println(ligne1);
+		 System.out.println(ligne2);
+		 System.out.println(ligne3);
+		 System.out.println(ligne4);
+		 System.out.println(ligne5);
+		 System.out.println(ligne6);
 	}	
 }

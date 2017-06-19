@@ -16,18 +16,18 @@ public class Template2 {
 	protected String la0 = "#     #";
 	
 	protected String le1 = "#######";
-	protected String le2 = "#     #";
-	protected String le3 = "#     #";
-	protected String le4 = "#     #";
-	protected String le5 = "#######";
-	protected String le6 = "#     #";
-	protected String le7 = "#     #";
-	protected String le8 = "#     #";
-	protected String le9 = "#     #";
-	protected String le0 = "#     #";
+	protected String le2 = "#      ";
+	protected String le3 = "#      ";
+	protected String le4 = "#      ";
+	protected String le5 = "#####  ";
+	protected String le6 = "#      ";
+	protected String le7 = "#      ";
+	protected String le8 = "#      ";
+	protected String le9 = "#      ";
+	protected String le0 = "#######";
 	
 	
-	protected String lh1 = "#######";
+	protected String lh1 = "#     #";
 	protected String lh2 = "#     #";
 	protected String lh3 = "#     #";
 	protected String lh4 = "#     #";
@@ -38,49 +38,49 @@ public class Template2 {
 	protected String lh9 = "#     #";
 	protected String lh0 = "#     #";
 	
-	protected String lm1 = "#######";
-	protected String lm2 = "#     #";
-	protected String lm3 = "#     #";
-	protected String lm4 = "#     #";
-	protected String lm5 = "#######";
+	protected String lm1 = "#     #";
+	protected String lm2 = "##   ##";
+	protected String lm3 = "# # # #";
+	protected String lm4 = "#  #  #";
+	protected String lm5 = "#     #";
 	protected String lm6 = "#     #";
 	protected String lm7 = "#     #";
 	protected String lm8 = "#     #";
 	protected String lm9 = "#     #";
 	protected String lm0 = "#     #";
 	
-	protected String ln1 = "#######";
-	protected String ln2 = "#     #";
-	protected String ln3 = "#     #";
-	protected String ln4 = "#     #";
-	protected String ln5 = "#######";
-	protected String ln6 = "#     #";
-	protected String ln7 = "#     #";
-	protected String ln8 = "#     #";
-	protected String ln9 = "#     #";
+	protected String ln1 = "#     #";
+	protected String ln2 = "##    #";
+	protected String ln3 = "# #   #";
+	protected String ln4 = "# #   #";
+	protected String ln5 = "#  #  #";
+	protected String ln6 = "#  #  #";
+	protected String ln7 = "#   # #";
+	protected String ln8 = "#   # #";
+	protected String ln9 = "#    ##";
 	protected String ln0 = "#     #";
 	
 	protected String lt1 = "#######";
-	protected String lt2 = "#     #";
-	protected String lt3 = "#     #";
-	protected String lt4 = "#     #";
-	protected String lt5 = "#######";
-	protected String lt6 = "#     #";
-	protected String lt7 = "#     #";
-	protected String lt8 = "#     #";
-	protected String lt9 = "#     #";
-	protected String lt0 = "#     #";
+	protected String lt2 = "   #   ";
+	protected String lt3 = "   #   ";
+	protected String lt4 = "   #   ";
+	protected String lt5 = "   #   ";
+	protected String lt6 = "   #   ";
+	protected String lt7 = "   #   ";
+	protected String lt8 = "   #   ";
+	protected String lt9 = "   #   ";
+	protected String lt0 = "   #   ";
 	
-	protected String l_1 = "#######";
+	protected String l_1 = " ##### ";
 	protected String l_2 = "#     #";
 	protected String l_3 = "#     #";
-	protected String l_4 = "#     #";
-	protected String l_5 = "#######";
-	protected String l_6 = "#     #";
-	protected String l_7 = "#     #";
-	protected String l_8 = "#     #";
-	protected String l_9 = "#     #";
-	protected String l_0 = "#     #";
+	protected String l_4 = " #    #";
+	protected String l_5 = "     # ";
+	protected String l_6 = "    #  ";
+	protected String l_7 = "   #   ";
+	protected String l_8 = "   #   ";
+	protected String l_9 = "       ";
+	protected String l_0 = "   #   ";
 	
 	
 	public void afficherAscii(String mot){
@@ -95,10 +95,11 @@ public class Template2 {
 		String ligne9 ="";
 		String ligne0 ="";
 		
-		 for (int i = 0; i < (mot.length()-1); i++) 
+		 for (int i = 0; i < mot.length(); i++) 
 		 {
 			 switch (mot.charAt(i)) {
 			 	case 'A': 
+			 	case 'a':
 			 		ligne1 = ligne1 + la1 + " ";
 			 		ligne2 = ligne2 + la2 + " ";
 			 		ligne3 = ligne3 + la3 + " ";
@@ -111,6 +112,7 @@ public class Template2 {
 			 		ligne0 = ligne0 + la0 + " ";
 			 		break;
 			 	case 'E':
+			 	case 'e':
 			 		ligne1 = ligne1 + le1 + " ";
 			 		ligne2 = ligne2 + le2 + " ";
 			 		ligne3 = ligne3 + le3 + " ";
@@ -123,6 +125,7 @@ public class Template2 {
 			 		ligne0 = ligne0 + le0 + " ";
 			 		break;
 			 	case 'H':
+			 	case 'h':
 			 		ligne1 = ligne1 + lh1 + " ";
 			 		ligne2 = ligne2 + lh2 + " ";
 			 		ligne3 = ligne3 + lh3 + " ";
@@ -135,6 +138,7 @@ public class Template2 {
 			 		ligne0 = ligne0 + lh0 + " ";
 			 		break;
 			 	case 'M':
+			 	case 'm':			 		
 			 		ligne1 = ligne1 + lm1 + " ";
 			 		ligne2 = ligne2 + lm2 + " ";
 			 		ligne3 = ligne3 + lm3 + " ";
@@ -147,6 +151,7 @@ public class Template2 {
 			 		ligne0 = ligne0 + lm0 + " ";
 			 		break;
 			 	case 'N':
+			 	case 'n':
 			 		ligne1 = ligne1 + ln1 + " ";
 			 		ligne2 = ligne2 + ln2 + " ";
 			 		ligne3 = ligne3 + ln3 + " ";
@@ -157,6 +162,19 @@ public class Template2 {
 			 		ligne8 = ligne8 + ln8 + " ";
 			 		ligne9 = ligne9 + ln9 + " ";
 			 		ligne0 = ligne0 + ln0 + " ";
+			 		break;
+			 	case 'T':
+			 	case 't':
+			 		ligne1 = ligne1 + lt1 + " ";
+			 		ligne2 = ligne2 + lt2 + " ";
+			 		ligne3 = ligne3 + lt3 + " ";
+			 		ligne4 = ligne4 + lt4 + " ";
+			 		ligne5 = ligne5 + lt5 + " ";
+			 		ligne6 = ligne6 + lt6 + " ";
+			 		ligne7 = ligne7 + lt7 + " ";
+			 		ligne8 = ligne8 + lt8 + " ";
+			 		ligne9 = ligne9 + lt9 + " ";
+			 		ligne0 = ligne0 + lt0 + " ";
 			 		break;
 			default:
 				ligne1 = ligne1 + l_1 + " ";
@@ -171,17 +189,18 @@ public class Template2 {
 		 		ligne0 = ligne0 + l_0 + " ";
 				break;
 			}
-			 System.out.println(ligne1);
-			 System.out.println(ligne2);
-			 System.out.println(ligne3);
-			 System.out.println(ligne4);
-			 System.out.println(ligne5);
-			 System.out.println(ligne6);
-			 System.out.println(ligne7);
-			 System.out.println(ligne8);
-			 System.out.println(ligne9);
-			 System.out.println(ligne0);
+			
 		}
+		 System.out.println(ligne1);
+		 System.out.println(ligne2);
+		 System.out.println(ligne3);
+		 System.out.println(ligne4);
+		 System.out.println(ligne5);
+		 System.out.println(ligne6);
+		 System.out.println(ligne7);
+		 System.out.println(ligne8);
+		 System.out.println(ligne9);
+		 System.out.println(ligne0);
 	}	
 }
 

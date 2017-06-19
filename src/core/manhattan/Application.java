@@ -12,7 +12,7 @@ public class Application {
 		String toAff;
 		int mode;
 
-		do {
+	/*	do {
 			System.out.println("Selectionner un template:\n1- Height: 3 Width: 4\n2- Height: 5 Width: 6\n_>");
 			templateSelection = sc.nextInt();
 		} while (templateSelection != 1 || templateSelection!= 2);
@@ -30,7 +30,13 @@ public class Application {
 				toAff = sc.nextLine();				
 			} else {
 				//here generate string to aff with faker
-			}
+			} */
+		
+		Template1 template = new Template1();
+		template.afficherAscii("manhattan");
+		
+		Template2 template2 = new Template2();
+		template2.afficherAscii("manhattan");
 	}
 
 }
