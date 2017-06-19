@@ -13,7 +13,7 @@ public class Application {
 		int mode;
 
 		do {
-			System.out.println("Selectionner un template:\n1- Height: 3 Width: 4\n2- Height: 5 Width: 6\n_>");
+			System.out.println("Selectionner un template:\n1- Height: 10 Width: 7\n2- Height: 6 Width: 5\n_>");
 			templateSelection = sc.nextInt();
 		} while (templateSelection != 1 && templateSelection != 2);
 		System.out.println("Vous avez choisit le template"+templateSelection+"\n");
