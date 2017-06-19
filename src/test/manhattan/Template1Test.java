@@ -31,16 +31,59 @@ public class Template1Test {
 	}
 	
 	@Test
-	public void afficherAscii() {
+	public void afficherAsciiTest() {
 		
-		String mot = "Manhattan";
+		String mot = "MANHATTAN";
 		
 		Template1 template = new Template1();
 		
 		
 	    template.afficherAscii(mot);
 
-	    assertEquals("#   # #   # #   # #   # #   #   #     #   #   # #   # ", outContent.toString());
+	    assertEquals( "#   # ##### #   # #   # ##### ##### ##### ##### #   # \n"
+		    		+ "## ## #   # ##  # #   # #   #   #     #   #   # ##  # \n"
+		    		+ "# # # ##### # # # ##### #####   #     #   ##### # # # \n"
+		    		+ "#   # #   # # # # #   # #   #   #     #   #   # # # # \n"
+		    		+ "#   # #   # #  ## #   # #   #   #     #   #   # #  ## \n"
+		    		+ "#   # #   # #   # #   # #   #   #     #   #   # #   # \n", outContent.toString());
+
+	}
+	
+	@Test
+	public void afficherAsciiTest2() {
+		
+		String mot = "ManhAtTan";
+		
+		Template1 template = new Template1();
+		
+		
+	    template.afficherAscii(mot);
+
+	    assertEquals( "#   # ##### #   # #   # ##### ##### ##### ##### #   # \n"
+		    		+ "## ## #   # ##  # #   # #   #   #     #   #   # ##  # \n"
+		    		+ "# # # ##### # # # ##### #####   #     #   ##### # # # \n"
+		    		+ "#   # #   # # # # #   # #   #   #     #   #   # # # # \n"
+		    		+ "#   # #   # #  ## #   # #   #   #     #   #   # #  ## \n"
+		    		+ "#   # #   # #   # #   # #   #   #     #   #   # #   # \n", outContent.toString());
+
+	}
+	
+	@Test
+	public void afficherAsciiTest3() {
+		
+		String mot = "E";
+		
+		Template1 template = new Template1();
+		
+		
+	    template.afficherAscii(mot);
+
+	    assertEquals( "##### \n"
+		    		+ "#     \n"
+		    		+ "###   \n"
+		    		+ "#     \n"
+		    		+ "#     \n"
+		    		+ "##### \n", outContent.toString());
 
 	}
 	

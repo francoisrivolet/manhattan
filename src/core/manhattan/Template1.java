@@ -129,11 +129,11 @@ public class Template1 {
 				break;
 			}
 		}
-		 System.out.println(ligne1);
-		 System.out.println(ligne2);
-		 System.out.println(ligne3);
-		 System.out.println(ligne4);
-		 System.out.println(ligne5);
-		 System.out.println(ligne6);
+		 System.out.print(ligne1+"\n");
+		 System.out.print(ligne2+"\n");
+		 System.out.print(ligne3+"\n");
+		 System.out.print(ligne4+"\n");
+		 System.out.print(ligne5+"\n");
+		 System.out.print(ligne6+"\n");
 	}	
 }
