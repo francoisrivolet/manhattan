@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="libs/commons-lang3-3.5.jar"/>
 	<classpathentry kind="lib" path="libs/generex-1.0.2.jar"/>
 	<classpathentry kind="lib" path="libs/javafaker-0.13.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
